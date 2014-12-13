@@ -27,23 +27,29 @@
 
     <!-- Middle content section -->
     <div class="middle">
-        <div class="container"><br><br><br>
-            <div class="col-md-12 content">
-                	
-
-<div id="myElement">Loading the player...</div>
-<script type="text/javascript">
-    jwplayer("myElement").setup({
-        file: "cats.mp4",
-        image: "images.jpg",
-        width: 800,
-        height: 500,
-    });
-</script>
-
-			</div> <!-- /container -->
-        </div>
-    </div>
+        <div class="container">
+			<div class="video">
+			<div class="myWrapper">
+				<div class="col-md-12 content">
+					<div id="myElement">Loading the player...</div>
+						<script type="text/javascript">
+							jwplayer("myElement").setup({
+								file: "cats.mp4",
+								width: "100%",
+								aspectratio: "16:9",
+								autostart:true,
+						<!-- Chapter Markers -->
+								tracks: [{
+									file:'include/proba.vtt',
+									kind:'chapters'
+								}]
+							});
+						</script>
+				</div> <!-- /container -->
+			</div>
+			</div>
+		</div>
+	</div>
     
     <!-- Site footer -->
     <div class="bottom">

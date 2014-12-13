@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 .form-signin {
-  max-width: 300px;
-  padding: 30px;
+  max-width: 500px;
+  padding: 70px;
   margin: 0 auto;
 }
 h1, h2, h3, h4 {
@@ -17,7 +17,7 @@ html {
     
 }
 .top {
-    background-color: #000A28;
+	background-image:pozadina.jpg
 }
 .top .navbar-brand {
     height: 50px;
@@ -92,3 +92,13 @@ html {
 .to-tutorial {
     text-align: center;
 }
+.video{
+	padding: 70px;
+
+	}
+.myWrapper {
+  position: relative;
+  padding-bottom: 56%;
+  padding-top: 20px;
+  height: 0;
+}	
