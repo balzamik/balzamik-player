@@ -17,7 +17,7 @@ html {
     
 }
 .top {
-	background-image:pozadina.jpg
+	background-color: #474747;
 }
 .top .navbar-brand {
     height: 50px;
