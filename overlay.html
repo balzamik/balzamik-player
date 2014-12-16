@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>overlay</title>
+    <!-- Include bootstrap CSS -->
+    <link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/style.css" rel="stylesheet">
+	<link href="includes/base2.css" rel="stylesheet">
+	<script src="includes/jwplayer/jwplayer.js"></script>
+
+</head>
+<body background="pozadina.jpg">
+
+    <header class="top" role="header">
+        <div class="container">
+            
+               <img src="logo.jpg" width="100%" height="auto">
+            
+           
+        </div>
+    </header>
+
+    <!-- Middle content section -->
+    <div class="middle">
+        <div class="container">
+			<div class="video">
+						
+
+				
+				<div class="col-md-12 content">
+				
+					<div id="myElement">Loading the player...</div>
+					<nav class="menu slide-menu-top">
+							<button class="close-menu">&uarr; Close</button>
+						</nav>
+
+									<div class="buttons">
+										<button class="nav-toggler toggle-slide-top">Slide Menu Top</button>
+									</div>
+						<script type="text/javascript">
+							jwplayer("myElement").setup({
+									file: "cats.mp4",
+									image: "cover.jpg",
+									width: "100%",
+									aspectratio: "16:9",
+									autostart:false,
+									title:"PLAY",
+									
+									tracks: [{
+										file:'proba.vtt',
+										kind:'thumbnails'
+									}]
+									
+							});
+						</script>
+					
+						
+				</div> <!-- /container -->
+			</div>
+		</div>
+	</div>
+    
+    <!-- Site footer -->
+    <div class="bottom">
+        <div class="container">
+            <div class="col-md-12" style="text-align:center">
+                <p>Copyright @balzamikgroup</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include jQuery and bootstrap JS plugins -->
+    <script src="includes/jquery/jquery-2.1.0.min.js"></script>
+    <script src="includes/bootstrap/js/bootstrap.min.js"></script>
+	<script src="includes/bootstrap/js/java1.js"></script>
+	<script src="includes/bootstrap/js/java2.js"></script>
+	<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-34160351-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+	</script>
+</body>
+</html>
