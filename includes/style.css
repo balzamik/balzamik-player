@@ -17,7 +17,7 @@ html {
     
 }
 .top {
-	background-color: #474747;
+	background-image:pozadina.jpg
 }
 .top .navbar-brand {
     height: 50px;
@@ -94,22 +94,7 @@ html {
 }
 .video{
 	padding: 70px;
+	color: blue;
 
 	}
-.myWrapper {
-  position: relative;
-  padding-bottom: 56%;
-  padding-top: 20px;
-  height: 0;
-}
-#overlay {
-  position: absolute; 
-  top: 100px; 
-  color: #FFF; 
-  text-align: center;
-  font-size: 40px;
-  background-color: rgba(221, 221, 221, 0.3);
-  width: 100%;
-  padding: 0px 0;
-  z-index: 2147483647;
-}
+	

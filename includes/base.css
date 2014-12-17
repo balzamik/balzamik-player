@@ -1,0 +1,52 @@
+
+body {
+    line-height: 1
+}
+
+blockquote {
+    quotes: none
+}
+blockquote:before,
+blockquote:after {
+    content: '';
+    content: none;
+}
+del {
+    text-decoration: line-through
+}
+
+a img {
+    border: none
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Globals
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+
+body {
+    background-color: #67b5d1;
+    color: #505050;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: #67b5d1;
+}
+a:hover {
+    color: #3184a1
+}
+
+#main {
+    background-color: #fff;
+    padding: 30px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+}

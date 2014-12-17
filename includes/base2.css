@@ -12,8 +12,9 @@ button {
     box-shadow: none;
 }
 .buttons {
+	bottom:150px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 .buttons button {
     display: inline-block;
@@ -29,19 +30,17 @@ button {
 .buttons button:focus {
     outline: none;
 }
+/*overlay*/
 nav.menu {
-    position: fixed;
-    z-index: 10;
+    position: relative;
+	z-index: 10;
     background-color: #67b5d1;
     overflow: hidden;
-    -webkit-transition:0.3s;
-    -moz-transition:0.3s;
-    -ms-transition:0.3s;
-    -o-transition:0.3s;
-    transition:0.3s;
+	transition:0.5s;
+	transition:hidden;
 }
 nav.menu ul {
-
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -69,12 +68,12 @@ nav.slide-menu-top button.close-menu{
     line-height: 50px;
     margin: 0;
 }
-/* za pomjeranje overlay-a da se ne vidi */
+/* za pomjeranje overlay-a gore */
 nav.slide-menu-top{
-    top: -100px;
+    top: -500px;
 }
 /* razmak overlaya od vrha */
 body.smt-open nav.slide-menu-top{
-    top: 330px;
+    top: 180px;
 }
 
