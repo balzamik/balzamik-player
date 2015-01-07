@@ -137,4 +137,14 @@ body.smt-open nav.slide-menu-top{
 body.smt-open2 nav.slide-menu-top2{
     top: 150px;
 }
+.logout{
+   background-color: #3184a1;
+   color: #fff;
+   text-align: right;
+   position:relative;
+   padding:15px;
+   left:90%;
+   margin:5px;
+   
+}
 
