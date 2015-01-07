@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>login </title>
+    <title>Login </title>
     <!-- Include bootstrap CSS -->
     <link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="includes/style.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body background="pozadina.jpg">
 
     <!-- Site header and navigation -->
-    <header class="top" role="header" >
+    <header class="top" role="header">
         <div class="container">
             
                <img src="logo.jpg" width="100%" height="auto">
@@ -27,19 +27,26 @@
     <!-- Middle content section -->
     <div class="middle">
         <div class="container">
-            <div class="col-md-12 content">
-                	<form class="form-signin" role="form">
-						<h2 class="form-signin-heading">Please sign in</h2>
-						<label for="inputEmail" class="sr-only">Email address</label>
-						<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-						<label for="inputPassword" class="sr-only">Password</label>
-						<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-						<br>
-						<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                	<form role="form">
+						<h2>Please Sign In</h2>
+						<hr class="colorgraph">
+						<div class="row">
+							<div class="form-group">
+								<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+							</div>
+							<div class="form-group">
+									<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+							</div>
+						</div>
+						<hr class="colorgraph">
+						<button class="btn btn-success btn-block btn-lg" type="submit">Sign in</button>
 					</form>
 
 			</div> <!-- /container -->
         </div>
+	</div>
     </div>
     
     <!-- Site footer -->
