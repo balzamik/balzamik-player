@@ -1,17 +1,7 @@
-.colorgraph {
-  height: 5px;
-  border-top: 0;
-  background: red;
-  border-radius: 5px;
-  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-}
 .rating {
-	width: 200px;
+	width: 300px;
 	height: 34px;
-	background-color: rgba(246, 243, 243, 0);
+	background-color: #f6f3f3;
 }
 
 .rating label {
@@ -53,14 +43,14 @@ span + input[type=radio] + label, legend + input[type=radio] + label {
 	min-height: 10px;
 	margin-top: -36px;
 	text-align: right;
-	background: #fff;
+	background: #6cbf00;
 	padding: 10px 10px;
 	display: block;
 	width: 50px;
 }
 
 .rating label.stars {
-	background:  url('star_off.png') no-repeat center center;
+	background: transparent url(star_off.png) no-repeat center center;
 }
 
 .rating label.stars:hover ~ label.stars, 
