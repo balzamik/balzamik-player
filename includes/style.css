@@ -7,6 +7,7 @@
 h1, h2, h3, h4 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+	color: #FFFFFF;
 }
 p {
     font-family: 'Lato', sans-serif;
@@ -35,11 +36,11 @@ html {
 }
 
 .middle {
-    background-image:url("pozadina.jpg");
+    
     max-height:95%;
 }
 .middle .container {
-    background-color: #C8ECFF;
+
     min-height: 500px;
     padding-bottom: 40px;
 }
@@ -51,10 +52,10 @@ html {
     background-color: #373737;
 }
 .bottom {
-    background-color: #474747;
+ 
 }
 .bottom .container {
-    background-color: #373737;
+
     height: 50px;
 }
 
