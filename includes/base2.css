@@ -90,7 +90,7 @@ button.close-menu2 {
 }
 /* sirina overlay */
 nav.slide-menu-top{
-    height: 250px;
+    /*height: 250px; */
 	opacity:0.7;
 	padding-bottom:50px;
 
@@ -127,17 +127,22 @@ nav.slide-menu-top2 button.close-menu2{
 }
 /* za pomjeranje overlay-a gore */
 nav.slide-menu-top{
-    top: -500px;
+ position:absolute;
+ display:none;
 }
 nav.slide-menu-top2{
-    top: -500px;
+     position:absolute;
+	display:none;
 }
 /* razmak overlaya od vrha */
 body.smt-open nav.slide-menu-top{
-    top: 296px;
+    top: 46px;
+	display:block;
 }
 body.smt-open2 nav.slide-menu-top2{
-    top: 296px;
+	display:block;
+    top: 46px;
+	right: 0px;
 }
 .logout{
    background-color: #3184a1;
