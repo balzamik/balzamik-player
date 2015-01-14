@@ -90,13 +90,13 @@ button.close-menu2 {
 }
 /* sirina overlay */
 nav.slide-menu-top{
-     height: 100px;
+    height: 250px;
 	opacity:0.7;
 	padding-bottom:50px;
 
 }
 nav.slide-menu-top2{
-	height: 100px;
+	height: 250px;
 	opacity:0.7;
 }
 /*poravnjanje close */
@@ -113,12 +113,16 @@ nav.slide-menu-top2 {
 nav.slide-menu-top button.close-menu{
     line-height: 20px;
     margin: 0;
+}	
+nav.slide-menu-top button.close-menu2{
+    line-height: 20px;
+    margin: 0;
 	
 	
 
 }
 nav.slide-menu-top2 button.close-menu2{
-    line-height: 50px;
+    line-height: 20px;
     margin: 0;
 }
 /* za pomjeranje overlay-a gore */
@@ -130,10 +134,10 @@ nav.slide-menu-top2{
 }
 /* razmak overlaya od vrha */
 body.smt-open nav.slide-menu-top{
-    top: 145px;
+    top: 296px;
 }
 body.smt-open2 nav.slide-menu-top2{
-    top: 145px;
+    top: 296px;
 }
 .logout{
    background-color: #3184a1;

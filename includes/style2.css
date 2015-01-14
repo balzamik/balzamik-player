@@ -1,0 +1,75 @@
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: red;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+.rating {
+	width: 200px;
+	height: 34px;
+	background-color: rgba(246, 243, 243, 0);
+}
+
+.rating label {
+	text-indent: -100px;
+	width: 40px !important;
+	height: 30px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.label {
+	float: left;
+	padding-top: 3px;
+}
+		
+input[type="radio"] {
+	padding-right: 4px;
+	position: absolute;
+	left: 340px;
+	margin-top: 10px;
+}
+				
+input[type="radio"], .rating label.stars {
+	float: right;
+	line-height: 30px;
+	height: 30px;
+}
+
+span + input[type=radio] + label, legend + input[type=radio] + label {
+	clear: right;
+	margin-right: 80px;
+	counter-reset: checkbox;
+}
+
+.rating input[type="radio"]:required + label:after {
+	content: '';
+	position: absolute;
+	left: 340px; 
+	min-height: 10px;
+	margin-top: -36px;
+	text-align: right;
+	background: #fff;
+	padding: 10px 10px;
+	display: block;
+	width: 50px;
+}
+
+.rating label.stars {
+	background:  url('star_off.png') no-repeat center center;
+}
+
+.rating label.stars:hover ~ label.stars, 
+.rating label.stars:hover, 
+.rating input[type=radio][name=stars]:checked ~ label.stars {
+	background-image: url('star.png');
+	counter-increment: checkbox;
+}
+
+.rating input[type=radio][name=stars]:required + label.stars:after {
+	content: counter(checkbox) " stars!";
+}
