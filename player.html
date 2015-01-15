@@ -23,64 +23,68 @@
 		
 	<!-- Middle content section -->
 	<div class="middle">
-		<div class="container">
-			<div class="video">
-				<div class="row">
-					<!-- glavni overlay -->
-					<div class="col-xs-10 content">	
-						<nav class="menu slide-menu-top">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search...">
-								<span class="input-group-addon" >
-									<span class="glyphicon glyphicon-search"></span>
-								</span>
+		<div class="col-md-10">
+			<div class="container">
+				<div class="video">
+					<div class="row">
+						<!-- glavni overlay -->
+						<div class="col-xs-10 content">	
+							<nav class="menu slide-menu-top">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search...">
+									<span class="input-group-addon" >
+										<span class="glyphicon glyphicon-search"></span>
+									</span>
+								</div>
+								<button type="button" class="close-menu"><span class="glyphicon glyphicon-arrow-up"></span></button>
+							</nav>
+							<div class="buttons">
+								<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top"><span class="glyphicon glyphicon-search"></span></button>
+								<a href="http://morescreens.com/" class="btn btn-info btn-lg">
+									<span class="glyphicon glyphicon-home"></span>
+								</a>
+								<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top">
+									<span class="glyphicon glyphicon-share"></span>
+								</button>
 							</div>
-							<button type="button" class="close-menu"><span class="glyphicon glyphicon-arrow-up"></span></button>
-						</nav>
-						<div class="buttons">
-							<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top"><span class="glyphicon glyphicon-search"></span></button>
-							<a href="http://morescreens.com/" class="btn btn-info btn-lg">
-								<span class="glyphicon glyphicon-home"></span>
-							</a>
-							<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top">
-								<span class="glyphicon glyphicon-share"></span>
-							</button>
+						</div>	
+						<!-- glavni overlay end-->	
+						
+						<!--rating overlay -->
+						<div class="col-xs-2 content">
+							<nav class="menu slide-menu-top2">
+								<p>Please rate this video:</p>
+									<fieldset class="rating">	
+										<input type="number" data-max="5" data-min="1" name="your_awesome_parameter" id="some_id" class="rating" data-empty-value="0" />
+										<br>												
+									</fieldset>
+								<button type="button" class="close-menu2"><span class="glyphicon glyphicon-arrow-up"></span></button>
+							</nav>
+							<div class="buttons2">
+								<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top2"><span class="glyphicon glyphicon-star"> Rating</span></button>
+							</div>
 						</div>
-					</div>	
-					<!-- glavni overlay end-->	
-					
-					<!--rating overlay -->
-					<div class="col-xs-2 content">
-						<nav class="menu slide-menu-top2">
-							<p>Please rate this video:</p>
-								<fieldset class="rating">	
-									<input type="number" data-max="5" data-min="1" name="your_awesome_parameter" id="some_id" class="rating" data-empty-value="0" />
-									<br>												
-								</fieldset>
-							<button type="button" class="close-menu2"><span class="glyphicon glyphicon-arrow-up"></span></button>
-						</nav>
-						<div class="buttons2">
-							<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top2"><span class="glyphicon glyphicon-star"> Rating</span></button>
-						</div>
+						<!--rating overlay end-->
+						
+						<div id="myElement">Loading the player...</div>
+						<script type="text/javascript">
+							jwplayer("myElement").setup({
+									file: "cats.mp4",
+									image: "cover.jpg",
+									width: "100%",
+									aspectratio: "16:9",
+									autostart:false,
+									title:"PLAY",
+								
+							});
+						</script>
+						
 					</div>
-					<!--rating overlay end-->
-					
-					<div id="myElement">Loading the player...</div>
-					<script type="text/javascript">
-						jwplayer("myElement").setup({
-								file: "cats.mp4",
-								image: "cover.jpg",
-								width: "100%",
-								aspectratio: "16:9",
-								autostart:false,
-								title:"PLAY",
-							
-						});
-					</script>
-					
-				</div>
-			</div> 
+				</div> 
+			</div>
+						
 		</div>
+		<div class="col-md-2"><p>4783274923<p></div>
 	</div>
 	<!-- Middle content section end -->	
 	
@@ -109,7 +113,6 @@
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-	</script>
-					
+		
 </body>
 </html>
