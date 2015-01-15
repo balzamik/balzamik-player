@@ -41,8 +41,8 @@ html {
 }
 .middle .container {
 
-    min-height: 500px;
-    padding-bottom: 40px;
+    min-height: 450px;
+
 }
 .navbar-nav li a {
     color: #CCC;
@@ -60,7 +60,7 @@ html {
 }
 
 .bottom .container p {
-    color: #666;
+    
 }
 .navbar-toggle {
     color: #009b9b;
