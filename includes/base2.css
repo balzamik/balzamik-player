@@ -136,12 +136,12 @@ nav.slide-menu-top2{
 }
 /* razmak overlaya od vrha */
 body.smt-open nav.slide-menu-top{
-    top: 46px;
+    top: 40px;
 	display:block;
 }
 body.smt-open2 nav.slide-menu-top2{
 	display:block;
-    top: 46px;
+    top: 40px;
 	right: 0px;
 }
 .logout{

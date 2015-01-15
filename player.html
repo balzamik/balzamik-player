@@ -21,75 +21,66 @@
 			</div>
 		</header>
 		
-
-					<!-- Middle content section -->
-					<div class="middle">
-						<div class="container">
-							<div class="video">
-								<div class="col-xs-10 content">	
-									<!-- glavni overlay -->
-									<nav class="menu slide-menu-top">
-										
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Search...">
-											<span class="input-group-addon" >
-												<span class="glyphicon glyphicon-search"></span>
-											</span>
-										</div>
-										<button type="button" class="close-menu"><span class="glyphicon glyphicon-arrow-up"></span></button>
-									</nav>
-									<div class="buttons">
-										<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top"><span class="glyphicon glyphicon-search"></span></button>
-										<a href="http://morescreens.com/" class="btn btn-info btn-lg">
-											<span class="glyphicon glyphicon-home"></span>
-										</a>
-										<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top">
-											<span class="glyphicon glyphicon-share"></span>
-										</button>
-									</div>
+			<!-- Middle content section -->
+			<div class="middle">
+				<div class="container">
+					<div class="video">
+						<div class="row">
+							<div class="col-xs-10 content">	
+								<!-- glavni overlay -->
+								<nav class="menu slide-menu-top">
 									
-								</div>
-									<!-- glavni overlay -->	
-									<!--rating overlay -->
-								<div class="col-xs-2 content">
-									<nav class="menu slide-menu-top2">
-										<p>Please rate this item:</p>
-											<fieldset class="rating">		
-												<input type="radio" name="stars" id="4_stars" value="4" >
-												<label class="stars" for="4_stars">4 stars</label><br>
-												<input type="radio" name="stars" id="3_stars" value="3" >
-												<label class="stars" for="3_stars">3 stars</label><br>
-												<input type="radio" name="stars" id="2_stars" value="2" >
-												<label class="stars" for="2_stars">2 stars</label><br>
-												<input type="radio" name="stars" id="1_stars" value="1" >
-												<label class="stars" for="1_stars">1 star</label><br>
-												<input type="radio" name="stars" id="0_stars" value="0" required>
-												<label class="stars" for="0_stars">0 star</label><br>
-											</fieldset>
-										<button type="button" class="close-menu2"><span class="glyphicon glyphicon-arrow-up"></span></button>
-									</nav>
-									<div class="buttons2">
-										<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top2"><span class="glyphicon glyphicon-star"> Rating</span></button>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search...">
+										<span class="input-group-addon" >
+											<span class="glyphicon glyphicon-search"></span>
+										</span>
 									</div>
-
+									<button type="button" class="close-menu"><span class="glyphicon glyphicon-arrow-up"></span></button>
+								</nav>
+								<div class="buttons">
+									<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top"><span class="glyphicon glyphicon-search"></span></button>
+									<a href="http://morescreens.com/" class="btn btn-info btn-lg">
+										<span class="glyphicon glyphicon-home"></span>
+									</a>
+									<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top">
+										<span class="glyphicon glyphicon-share"></span>
+									</button>
 								</div>
-								<!-- rating overlay -->
-									<div id="myElement">Loading the player...</div>
-										<script type="text/javascript">
-											jwplayer("myElement").setup({
-													file: "cats.mp4",
-													image: "cover.jpg",
-													width: "100%",
-													aspectratio: "16:9",
-													autostart:false,
-													title:"PLAY",
-												
-											});
-										</script>
-							</div> 
+								
+							</div>	
 							
+							<!--rating overlay -->
+							<div class="col-xs-2 content">
+								<nav class="menu slide-menu-top2">
+									<p>Please rate this video:</p>
+										<fieldset class="rating">	
+											<input type="number" data-max="5" data-min="1" name="your_awesome_parameter" id="some_id" class="rating" data-empty-value="0" />
+											<br>												
+										</fieldset>
+									<button type="button" class="close-menu2"><span class="glyphicon glyphicon-arrow-up"></span></button>
+								</nav>
+								<div class="buttons2">
+									<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top2"><span class="glyphicon glyphicon-star"> Rating</span></button>
+								</div>
+							</div>
+							
+							<div id="myElement">Loading the player...</div>
+							<script type="text/javascript">
+								jwplayer("myElement").setup({
+										file: "cats.mp4",
+										image: "cover.jpg",
+										width: "100%",
+										aspectratio: "16:9",
+										autostart:false,
+										title:"PLAY",
+									
+								});
+							</script>
 						</div>
-					</div>
+					</div> 
+				</div>
+			</div>
 					
 					<!-- Site footer -->
 					<div class="bottom">
@@ -105,6 +96,7 @@
 					<script src="includes/bootstrap/js/bootstrap.min.js"></script>
 					<script src="includes/bootstrap/js/java1.js"></script>
 					<script src="includes/bootstrap/js/java2.js"></script>
+					<script src="includes/bootstrap/js/bootstrap-rating-input.min.js" type="text/javascript"></script>
 					<script type="text/javascript">
 						  var _gaq = _gaq || [];
 						  _gaq.push(['_setAccount', 'UA-34160351-1']);
