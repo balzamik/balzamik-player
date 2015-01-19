@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>player</title>
+    <!-- Include bootstrap CSS -->
+    <link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/style.css" rel="stylesheet">
+	<link href="includes/style2.css" rel="stylesheet">
+	<link href="includes/base2.css" rel="stylesheet">
+	<script src="includes/jwplayer/jwplayer.js"></script>
+
+</head>
+<body background="pozadina2.jpg">
+
+	<header class="top" role="header">
+		<a href="login.html"class="btn2 btn-info2 btn-lg2">
+		<span class="glyphicon glyphicon-user"> Logout</span>
+		</a>
+		<div class="container">
+			<img src="logo.png" width="100%" height="auto">
+		</div>
+	</header>
+		
+	<!-- Middle content section -->
+	<div class="middle">
+		<div class="col-md-10">
+			<div class="container">
+				<div class="video">
+					<div class="row">
+						<!-- glavni overlay -->
+						<div class="col-xs-8 content">	
+							<nav class="menu slide-menu-top">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search...">
+									<span class="input-group-addon" >
+										<span class="glyphicon glyphicon-search"></span>
+									</span>
+				
+								</div><br>
+								<div class="row">
+									<div class="col-md-3 portfolio-item">
+										<a href="#">
+											<img class="img-responsive" src="http://placehold.it/300x150" alt="">
+										</a>
+										<h3>
+											<a href="#">Video Name</a>
+										</h3>
+										<p>Here stands the description of the video</p>
+									</div>
+								</div>
+									<!-- Facebook -->
+										<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank">
+										<img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" width="40px" align="left" alt="Facebook" /></a>
+										<!-- Twitter -->
+										<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
+										<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" width="40px" align="left" alt="Twitter" /></a>
+										<!-- Google+ -->
+										<a href="https://plus.google.com/share?url=http://www.simplesharebuttons.com" target="_blank">
+										<img src="http://www.simplesharebuttons.com/images/somacro/google.png" width="40px" align="left" alt="Google" /></a>
+								<br><button type="button" class="close-menu"><span class="glyphicon glyphicon-arrow-up"></span></button>
+							</nav>
+							<div class="buttons">
+								<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top"><span class="glyphicon glyphicon-search"></span></button>
+								<a href="homepage.html" class="btn btn-info btn-lg">
+									<span class="glyphicon glyphicon-home"></span>
+								</a>
+								<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top">
+									<span class="glyphicon glyphicon-share"></span>
+								</button><br>
+								
+							</div>
+						</div>	
+						<!-- glavni overlay end-->	
+						
+						<!--rating overlay -->
+						<div class="col-xs-2 content">
+							<nav class="menu slide-menu-top2">
+								<p>Rating:</p>
+									<fieldset class="rating">	
+										<input type="number" data-max="5" data-min="1" name="your_awesome_parameter" id="some_id" class="rating" data-empty-value="0" />
+										<br>												
+									</fieldset>
+								<button type="button" class="close-menu2"><span class="glyphicon glyphicon-arrow-up"></span></button>
+							</nav>
+							<div class="buttons2">
+								<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top2"><span class="glyphicon glyphicon-star"></span></button>
+							</div>
+						</div>
+						<!--rating overlay end-->
+						
+						<!--chat overlay -->
+						<div class="col-xs-2 content">
+							<nav class="menu slide-menu-top3">
+								<p>Chat:</p>
+									<script id="cid0020000082327670159" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 200px;height: 500px;">{"handle":"balzamik-team","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","q":"0084ef","r":100,"cnrs":"0.35"}}</script>
+								<button type="button" class="close-menu3"><span class="glyphicon glyphicon-arrow-up"></span></button>
+							</nav>
+							<div class="buttons3">
+								<button type="button" class="btn btn-info btn-lg nav-toggler toggle-slide-top3"><span class="glyphicon glyphicon-comment" ></span></button>
+							</div>
+						</div>
+						<!--rating overlay end-->
+						
+						
+						
+						<div id="myElement">Loading the player...</div>
+						<script type="text/javascript">
+							jwplayer("myElement").setup({
+									file: "cats.mp4",
+									image: "cover.jpg",
+									width: "100%",
+									aspectratio: "16:9",
+									autostart:false,
+									title:"PLAY",
+								
+							});
+						</script>
+						
+					</div>
+				</div> 
+			</div>
+						
+		</div>
+		
+	</div>
+	<!-- Middle content section end -->	
+	
+	<!-- Site footer -->
+	<div class="bottom">
+		<div class="container">
+			<div class="col-md-12" style="text-align:center">
+				<p>Copyright @balzamikgroup</p>
+			</div>
+		</div>
+	</div>
+	<!-- Site footer end -->
+
+	<!-- Include jQuery and bootstrap JS plugins -->
+	<script src="includes/jquery/jquery-2.1.0.min.js"></script>
+	<script src="includes/bootstrap/js/bootstrap.min.js"></script>
+	<script src="includes/bootstrap/js/java1.js"></script>
+	<script src="includes/bootstrap/js/java2.js"></script>
+	<script src="includes/bootstrap/js/bootstrap-rating-input.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-34160351-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+</body>
+</html>
