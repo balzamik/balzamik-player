@@ -26,6 +26,14 @@
 		activeNav3
 	;
 	mask3.className = "mask3";
+	
+	var body = document.body,
+		mask4 = document.createElement("div4"),
+		toggleSlideTop4 = document.querySelector( ".toggle-slide-top4" ),
+		slideMenuTop4 = document.querySelector( ".slide-menu-top4" ),
+		activeNav4
+	;
+	mask4.className = "mask4";
 
 	/* slide menu top */
 	toggleSlideTop.addEventListener( "click", function(){
@@ -45,6 +53,12 @@
 		activeNav3 = "smt-open3";
 		
 	} );
+	toggleSlideTop4.addEventListener( "click", function(){
+		classie.add( body, "smt-open4" );
+		document.body.appendChild(mask4);
+		activeNav4 = "smt-open4";
+		
+	} );
 
 	/* hide active menu if mask is clicked */
 	mask.addEventListener( "click", function(){
@@ -61,6 +75,11 @@
 		classie.remove( body, activeNav3 );
 		activeNav = "";
 		document.body.removeChild(mask3);
+	} );
+	mask4.addEventListener( "click", function(){
+		classie.remove( body, activeNav4 );
+		activeNav = "";
+		document.body.removeChild(mask4);
 	} );
 	
 	/* hide active menu if close menu button is clicked */
@@ -85,6 +104,14 @@
 			document.body.removeChild(mask3);
 		} );
 	});
+	[].slice.call(document.querySelectorAll(".close-menu4")).forEach(function(el,i){
+		el.addEventListener( "click", function(){
+			classie.remove( body, activeNav4 );
+			activeNav4 = "";
+			document.body.removeChild(mask4);
+		} );
+	});
+	
 
 
 })( window );
