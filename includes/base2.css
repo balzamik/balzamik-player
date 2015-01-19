@@ -113,10 +113,12 @@ nav.slide-menu-top2 {
 nav.slide-menu-top button.close-menu{
     line-height: 20px;
     margin: 0;
+	width: 100%;
 }	
 nav.slide-menu-top button.close-menu2{
     line-height: 20px;
     margin: 0;
+	
 	
 	
 
@@ -124,6 +126,7 @@ nav.slide-menu-top button.close-menu2{
 nav.slide-menu-top2 button.close-menu2{
     line-height: 20px;
     margin: 0;
+	width: 100%;
 }
 /* za pomjeranje overlay-a gore */
 nav.slide-menu-top{
